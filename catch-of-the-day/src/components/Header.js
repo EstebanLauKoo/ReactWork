@@ -2,7 +2,7 @@ import React from 'react';
 
 // this is just another way to write function Header() {}
 const Header = (props) => {
-    { /* console.log the current object object going through the compononet */ }
+    { /* console.log the current object object going through the component */ }
     console.log(props)
     return (
         <header className="top">

@@ -28,6 +28,11 @@ const Root = () => {
     return (
         <BrowserRouter>
             <div>
+                { /*
+                    We are playing with the routes on this
+                    in Match we are asking for the url to match those and depending on what you do it will render with different components
+                    in Miss we are throwing an error situation and rendering something with it
+                */}
             <Match pattern="/store/:storeId" component={App} />
             <Match exactly pattern="/" component={StorePicker} />
             <Miss component={NotFound} />
