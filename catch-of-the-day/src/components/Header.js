@@ -2,8 +2,6 @@ import React from 'react';
 
 // this is just another way to write function Header() {}
 const Header = (props) => {
-    { /* console.log the current object object going through the component */ }
-    console.log(props)
     return (
         <header className="top">
             <h1>
@@ -15,11 +13,9 @@ const Header = (props) => {
                 Day
             </h1>
             { /* We are passing the prop with the actual component.prop. and the key name value*/}
-            <h3 className="tagline">{props.tagline}</h3>
+            <h3 className="tagline"><span>{props.tagline}</span></h3>
         </header>
     )
 }
-
-
 
 export default Header;
